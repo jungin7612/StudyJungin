@@ -1,0 +1,29 @@
+.ddayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  padding: 0 1vw;
+}
+.wiseSayingWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.wiseSayingContainer {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.wiseSayingWrap p {
+  margin: 0.2em;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+progress {
+  width: 80%;
+}
+progress::-webkit-progress-bar {
+  background-color: black;
+}

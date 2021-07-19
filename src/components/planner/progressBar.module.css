@@ -1,0 +1,14 @@
+.progressWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progressBar {
+  width: 90%;
+}
+.BeginAgain {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 1em;
+}

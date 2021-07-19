@@ -1,0 +1,8 @@
+.monthList {
+  height: 65%;
+  list-style: none;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 1000;
+  font-size: 4vw;
+  overflow: scroll;
+}

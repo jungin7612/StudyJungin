@@ -1,0 +1,14 @@
+.imgContainer {
+  width: 30em;
+  height: 30em;
+  border: 1px solid white;
+  margin: 0 2vw;
+}
+.planimgContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+.triangle:hover {
+  opacity: 1;
+}
