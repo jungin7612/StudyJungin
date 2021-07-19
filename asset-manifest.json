@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/StudyJungin/static/css/main.12d1d514.chunk.css",
+    "main.js": "/StudyJungin/static/js/main.55e0c1a5.chunk.js",
+    "main.js.map": "/StudyJungin/static/js/main.55e0c1a5.chunk.js.map",
+    "runtime-main.js": "/StudyJungin/static/js/runtime-main.0ee1dcf2.js",
+    "runtime-main.js.map": "/StudyJungin/static/js/runtime-main.0ee1dcf2.js.map",
+    "static/js/2.6b9a2b78.chunk.js": "/StudyJungin/static/js/2.6b9a2b78.chunk.js",
+    "static/js/2.6b9a2b78.chunk.js.map": "/StudyJungin/static/js/2.6b9a2b78.chunk.js.map",
+    "static/js/3.92f243ce.chunk.js": "/StudyJungin/static/js/3.92f243ce.chunk.js",
+    "static/js/3.92f243ce.chunk.js.map": "/StudyJungin/static/js/3.92f243ce.chunk.js.map",
+    "index.html": "/StudyJungin/index.html",
+    "static/css/main.12d1d514.chunk.css.map": "/StudyJungin/static/css/main.12d1d514.chunk.css.map",
+    "static/js/2.6b9a2b78.chunk.js.LICENSE.txt": "/StudyJungin/static/js/2.6b9a2b78.chunk.js.LICENSE.txt",
+    "static/media/github.69ffd9cd.png": "/StudyJungin/static/media/github.69ffd9cd.png",
+    "static/media/insta.0963b7a5.png": "/StudyJungin/static/media/insta.0963b7a5.png",
+    "static/media/profile.8290746e.jpg": "/StudyJungin/static/media/profile.8290746e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ee1dcf2.js",
+    "static/js/2.6b9a2b78.chunk.js",
+    "static/css/main.12d1d514.chunk.css",
+    "static/js/main.55e0c1a5.chunk.js"
+  ]
+}
