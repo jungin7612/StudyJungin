@@ -1,0 +1,26 @@
+.mainNav li {
+  list-style: none;
+}
+.mainNav ul {
+  padding: 0;
+}
+.mainNav a {
+  text-decoration: none;
+  color: white;
+  font-size: 3vw;
+  font-weight: bolder;
+}
+.mainNav a:hover {
+  font-weight: 100;
+  opacity: 50%;
+  transition: 0.5s;
+}
+.mainNav {
+  width: 28%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2vw;
+  border-right: 1px dashed white;
+}
