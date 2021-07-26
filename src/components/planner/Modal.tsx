@@ -30,7 +30,7 @@ export default function Modal(props: any) {
       studyTime: enteredstudyTime,
       todos: todos,
     };
-    fetch("/api/post", {
+    fetch("https://studyapi.jungin.me/api/post", {
       method: "POST",
       body: JSON.stringify(data), //
       headers: {
