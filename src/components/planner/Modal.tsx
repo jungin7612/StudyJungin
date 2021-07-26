@@ -1,29 +1,53 @@
 import React from "react";
+import { useState } from "react";
 import { useRef } from "react";
 import "./modal.css";
+import Task from "./Task";
+import TodoList from "./TodoList";
 
 export default function Modal(props: any) {
+  const [inputText1, setInputText1] = useState("");
+  const [inputText2, setInputText2] = useState("");
+  const [todos, setTodos] = useState([]);
+
   const passwordRef: any = useRef();
+  const dateRef: any = useRef();
+  const commentRef: any = useRef();
+  const itTimeRef: any = useRef();
+  const studyTimeRef: any = useRef();
   const transportInfo = (event: any) => {
     event.preventDefault();
-    const enterdPasswrod = passwordRef.current.value;
+    const enteredPassword = passwordRef.current.value;
+    const enteredDate = dateRef.current.value;
+    const enteredComment = commentRef.current.value;
+    const enteredItTime = itTimeRef.current.value;
+    const enteredstudyTime = studyTimeRef.current.value;
     const data = {
-      password: enterdPasswrod,
+      password: enteredPassword,
+      date: enteredDate,
+      comment: enteredComment,
+      itTime: enteredItTime,
+      studyTime: enteredstudyTime,
+      todos: todos,
     };
-    fetch("https://jungin.me/", {
+    fetch("/api/post", {
       method: "POST",
       body: JSON.stringify(data), //
       headers: {
         "Content-Type": "application/json; charset=utf-8",
         datatype: "text",
+        Accept: "application/json",
       },
     })
-      .then((res) => {
-        res.json();
-      })
+      .then((res) => res.json())
       .then((response: any) => {
-        if (response.status) {
-          console.log("Success");
+        console.log(response);
+        if (response) {
+          if (!response.auth) {
+            alert("success");
+          } else {
+            alert("꺼졍");
+          }
         } else {
           console.log("fail");
         }
@@ -45,7 +69,29 @@ export default function Modal(props: any) {
             </button>
           </header>
           <main className="modaldesc">
-            <input type="password" ref={passwordRef} />
+            <input
+              id="password"
+              type="password"
+              ref={passwordRef}
+              placeholder="password"
+            />
+            <input type="date" ref={dateRef} />
+            <input type="text" placeholder="comment" ref={commentRef} />
+            <input type="number" placeholder="IT total time" ref={itTimeRef} />
+            <input
+              type="number"
+              placeholder="Study total time"
+              ref={studyTimeRef}
+            />
+            <TodoList setTodos={setTodos} todos={todos} />
+            <Task
+              inputText1={inputText1}
+              inputText2={inputText2}
+              todos={todos}
+              setTodos={setTodos}
+              setInputText1={setInputText1}
+              setInputText2={setInputText2}
+            />
           </main>
           <footer>
             <button className="close" onClick={transportInfo}>

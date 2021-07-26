@@ -1,0 +1,14 @@
+.task_Wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin-top: 1.5vh;
+}
+.noData_Wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

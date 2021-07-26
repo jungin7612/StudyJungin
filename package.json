@@ -1,9 +1,11 @@
 {
-  "homepage": "http://jungin7612.github.io/StudyJungin",
+  "proxy": "http://127.0.0.1:9999",
   "name": "studtwithme",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nivo/core": "^0.73.0",
+    "@nivo/line": "^0.73.0",
     "@ramonak/react-progress-bar": "^3.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

@@ -5,4 +5,13 @@
   font-weight: 1000;
   font-size: 4vw;
   overflow: scroll;
+  margin: 0;
+}
+.monthList li {
+  color: white;
+  cursor: pointer;
+}
+.monthList li:hover {
+  opacity: 0.5;
+  transition: ease 0.5s;
 }

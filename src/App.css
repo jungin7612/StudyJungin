@@ -38,6 +38,7 @@
 }
 .chapter {
   position: fixed;
+  font-size: 1vw;
   left: 2em;
   top: 1.5em;
   color: white;
@@ -51,4 +52,8 @@ body {
 }
 body * {
   touch-action: none;
+  text-decoration: none;
+}
+.todo-list {
+  padding: 0;
 }

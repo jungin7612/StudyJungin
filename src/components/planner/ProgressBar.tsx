@@ -26,14 +26,19 @@ export default function Progress() {
       <p className={classes.BeginAgain} onClick={openModal}>
         Begin
       </p>
-      <Modal open={modalOpen} close={closeModal} header="Password"></Modal>
+      <Modal
+        open={modalOpen}
+        close={closeModal}
+        header="Post a Daily Planer"
+      ></Modal>
       <ProgressBar
         width="100%"
-        height="1em"
+        height="1vh"
         completed={Math.floor(((991 - getDiff()) / 991) * 100)}
         bgColor="#404040"
         className={classes.progressBar}
-        isLabelVisible={false}
+        isLabelVisible={true}
+        labelSize="5px"
       />
       <p className={classes.BeginAgain}>End</p>
     </div>

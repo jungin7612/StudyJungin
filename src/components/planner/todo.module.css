@@ -1,0 +1,23 @@
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.completeBtn {
+  width: 5em;
+  margin-left: 1vw;
+}
+.trashBtn {
+  width: 20%;
+}
+.taskName {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-right: 1vw;
+}
+.detailDesc.completed {
+  color: gray;
+  text-decoration: line-through;
+  opacity: 0.6;
+}

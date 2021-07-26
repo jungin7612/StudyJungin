@@ -1,14 +1,31 @@
 .imgContainer {
-  width: 30em;
-  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 33vw;
+  height: 60vh;
   border: 1px solid white;
   margin: 0 2vw;
 }
 .planimgContainer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 5vw;
+  margin: 0 3vw;
+}
+.triangle {
+  cursor: pointer;
 }
 .triangle:hover {
   opacity: 1;
+}
+.Wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  margin-top: 2vh;
 }

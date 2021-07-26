@@ -1,0 +1,38 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.dateWrap {
+  border-top: solid 1px white;
+}
+.dateWrap p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+}
+.comment_time_Wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+.comment_Wrap {
+  width: 50%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+}
+.comment_Wrap p {
+  font-family: "Nanum Gothic", sans-serif;
+}
+.time_Wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.time_Wrap p {
+  margin: 0;
+}
