@@ -5,7 +5,7 @@ export default function MonthList({ posts, setPosts }) {
     const data = {
       id: e.target.id,
     };
-    fetch("http://studyapi.jungin.me/api/getdata", {
+    fetch("https://studyapi.jungin.me/api/getdata", {
       method: "POST",
       body: JSON.stringify(data), //
       headers: {
