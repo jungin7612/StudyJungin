@@ -6,6 +6,11 @@
   font-size: 4vw;
   overflow: scroll;
   margin: 0;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.monthList::-webkit-scrollbar {
+  display: none;
 }
 .monthList li {
   color: white;
