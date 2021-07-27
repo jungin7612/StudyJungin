@@ -24,7 +24,7 @@ export default function MonthList({ posts, setPosts }) {
   };
   return (
     <ul className={classes.monthList}>
-      <li onClick={getTodos} id="2021-12">
+      {/* <li onClick={getTodos} id="2021-12">
         2021 DEC
       </li>
       <li onClick={getTodos} id="2021-11">
@@ -38,7 +38,7 @@ export default function MonthList({ posts, setPosts }) {
       </li>
       <li onClick={getTodos} id="2021-08">
         2021 AUG
-      </li>
+      </li> */}
       <li onClick={getTodos} id="2021-07">
         2021 JUL
       </li>
