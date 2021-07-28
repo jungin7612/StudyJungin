@@ -17,13 +17,13 @@ export default function Date(props) {
         <div className={classes.time_Wrap}>
           <div>
             <p>
-              {itTimeHour ? "ITTIME : " + itTimeHour + "H" : ""}{" "}
-              {itTimeMinute ? itTimeHour + "M" : ""}
+              {isNaN(itTimeHour) ? "" : "ITTIME : " + itTimeHour + "H"}{" "}
+              {itTimeMinute ? itTimeMinute + "M" : ""}
             </p>
           </div>
           <div>
             <p>
-              {studyTimeHour ? "STUDYTIME : " + studyTimeHour + "H" : ""}{" "}
+              {isNaN(studyTimeHour) ? "" : "STUDYTIME : " + studyTimeHour + "H"}{" "}
               {studyTimeMinute ? studyTimeMinute + "M" : ""}
             </p>
           </div>
