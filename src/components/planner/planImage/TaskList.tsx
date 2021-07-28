@@ -3,7 +3,6 @@ import DetailTask from "./DetailTask";
 
 export default function TaskList(props: any) {
   const todos = props.todos;
-  console.log(todos);
   if (todos) {
     return (
       <div className={classes.task_Wrap}>
@@ -13,6 +12,7 @@ export default function TaskList(props: any) {
               subject={todo.text1}
               task={todo.text2}
               completed={todo.completed}
+              key= {Math.random() * 1000}
             />
           );
         })}
