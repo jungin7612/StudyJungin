@@ -9,14 +9,14 @@ export default function PlanImage(props: any) {
     if (status < props.posts.length - 1) {
       setstatus(status + 1);
     } else {
-      alert("끝");
+     
     }
   };
   const downHandler = () => {
     if (status > 0) {
       setstatus(status - 1);
     } else {
-      alert("끝");
+     
     }
   };
 
