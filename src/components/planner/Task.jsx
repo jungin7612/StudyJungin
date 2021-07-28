@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 export default function Task({
   setInputText1,
   todos,
@@ -7,14 +9,12 @@ export default function Task({
   inputText2,
 }) {
   const inputTextHandler1 = (e) => {
-    console.log(e.target.value);
     setInputText1(e.target.value);
   };
   const inputTextHandler2 = (e) => {
-    console.log(e.target.value);
     setInputText2(e.target.value);
   };
-  const submitHandelr = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
     setTodos([
       ...todos,
@@ -28,13 +28,19 @@ export default function Task({
     setInputText1("");
     setInputText2("");
   };
-
+  const onKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      submitHandler(e)
+      inputEl.current.focus()
+    }
+  }
+  const inputEl = useRef(null)
   return (
     <div className="TaskContainer">
-      <input value={inputText1} onChange={inputTextHandler1} type="text" />
-      <input value={inputText2} onChange={inputTextHandler2} type="text" />
+      <input value={inputText1} onChange={inputTextHandler1} type="text" onKeyPress={onKeyPress} ref={inputEl} />
+      <input value={inputText2} onChange={inputTextHandler2} type="text" onKeyPress={onKeyPress} />
       <button
-        onClick={submitHandelr}
+        onClick={submitHandler}
         className="plus-button plus-button--small"
       ></button>
     </div>
