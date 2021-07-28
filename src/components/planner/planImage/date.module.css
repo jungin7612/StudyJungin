@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF_HambakSnow';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .wrap {
   display: flex;
   flex-direction: column;
@@ -8,8 +26,7 @@
   border-top: solid 1px white;
 }
 .dateWrap p {
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: bold;
+  font-family: 'SF_HambakSnow';
 }
 .comment_time_Wrap {
   display: flex;
@@ -22,7 +39,7 @@
   border-bottom: solid 1px white;
 }
 .comment_Wrap p {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'MaruBuri-Regular';
 }
 .time_Wrap {
   display: flex;
@@ -31,7 +48,7 @@
   width: 40%;
   border-top: solid 1px white;
   border-bottom: solid 1px white;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'Cafe24SsurroundAir';
 }
 .time_Wrap p {
   margin: 0;
