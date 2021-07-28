@@ -52,6 +52,7 @@ export default function Modal(props: any) {
           console.log("fail");
         }
       });
+      close()
   };
   // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
   const { open, close, header } = props;
@@ -74,6 +75,7 @@ export default function Modal(props: any) {
               type="password"
               ref={passwordRef}
               placeholder="password"
+              autoFocus
             />
             <input type="date" ref={dateRef} />
             <input type="text" placeholder="comment" ref={commentRef} />
