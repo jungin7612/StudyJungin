@@ -17,13 +17,13 @@ export default function Date(props) {
         <div className={classes.time_Wrap}>
           <div>
             <p>
-              {itTimeHour ? itTimeHour + "H" : ""}{" "}
+              {itTimeHour ? "ITTIME : " + itTimeHour + "H" : ""}{" "}
               {itTimeMinute ? itTimeHour + "M" : ""}
             </p>
           </div>
           <div>
             <p>
-              {studyTimeHour ? studyTimeHour + "H" : ""}{" "}
+              {studyTimeHour ? "STUDYTIME : " + studyTimeHour + "H" : ""}{" "}
               {studyTimeMinute ? studyTimeMinute + "M" : ""}
             </p>
           </div>
