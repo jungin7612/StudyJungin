@@ -8,7 +8,7 @@ export default function DetailTask(props: any) {
       </div>
       <div className="check_Wrap">
         <p>{props.task}</p>
-        <input type="checkbox" checked={props.completed} />
+        <input type="checkbox" defaultChecked={props.completed} />
       </div>
     </div>
   );

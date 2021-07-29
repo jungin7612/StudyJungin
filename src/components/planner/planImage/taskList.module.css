@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
   margin-top: 1.5vh;
+  border: 1px solid white;
 }
 .noData_Wrap {
   display: flex;

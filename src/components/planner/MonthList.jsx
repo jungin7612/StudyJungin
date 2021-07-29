@@ -24,21 +24,6 @@ export default function MonthList({ posts, setPosts }) {
   };
   return (
     <ul className={classes.monthList}>
-      {/* <li onClick={getTodos} id="2021-12">
-        2021 DEC
-      </li>
-      <li onClick={getTodos} id="2021-11">
-        2021 NOV
-      </li>
-      <li onClick={getTodos} id="2021-10">
-        2021 OCT
-      </li>
-      <li onClick={getTodos} id="2021-09">
-        2021 SEP
-      </li>
-      <li onClick={getTodos} id="2021-08">
-        2021 AUG
-      </li> */}
       <li onClick={getTodos} id="2021-07">
         2021 JUL
       </li>
