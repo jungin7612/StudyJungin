@@ -49,7 +49,7 @@ const DimigoReport = () => (
       legendOffset: -40,
       legendPosition: "middle",
     }}
-    colors={{ scheme: "nivo" }}
+    colors={{ scheme: "pastel1" }}
     theme={theme}
     pointSize={10}
     pointColor={{ theme: "background" }}
