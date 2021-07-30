@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import classes from "./monthList.module.css";
 
 export default function MonthList({ posts, setPosts }) {
+
   useEffect(() => {
     const data = {
       id: "2021-07",
@@ -22,7 +23,7 @@ export default function MonthList({ posts, setPosts }) {
           alert("something wrong");
         }
       });
-  }, [])
+  }, [setPosts])
 
   const getTodos = (e) => {
     const data = {
