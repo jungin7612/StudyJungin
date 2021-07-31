@@ -47,9 +47,6 @@ main {
   display: flex;
   color: white;
 }
-body {
-  overflow: hidden;
-}
 body * {
   touch-action: none;
   text-decoration: none;
