@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import classes from "./monthList.module.css";
 
 export default function MonthList({ posts, setPosts }) {
-
   useEffect(() => {
     const data = {
       id: "2021-07",
@@ -46,8 +45,13 @@ export default function MonthList({ posts, setPosts }) {
         }
       });
   };
+
+
   return (
     <ul className={classes.monthList}>
+      <li onClick={getTodos} id="2021-08">
+        2021 AUG
+      </li>
       <li onClick={getTodos} id="2021-07">
         2021 JUL
       </li>
