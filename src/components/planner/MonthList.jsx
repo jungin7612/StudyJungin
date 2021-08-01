@@ -4,7 +4,7 @@ import classes from "./monthList.module.css";
 export default function MonthList({ posts, setPosts }) {
   useEffect(() => {
     const data = {
-      id: "2021-07",
+      id: "2021-08",
     };
     fetch("https://studyapi.jungin.me/api/getdata", {
       method: "POST",
