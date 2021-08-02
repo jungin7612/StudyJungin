@@ -55,9 +55,6 @@ export default function MonthList({ posts, setPosts }) {
       <li onClick={getTodos} id="2021-07">
         2021 JUL
       </li>
-      <li onClick={getTodos} id="2021-06">
-        2021 JUN
-      </li>
     </ul>
   );
 }
