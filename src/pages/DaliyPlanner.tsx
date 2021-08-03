@@ -8,6 +8,7 @@ import { useState } from "react";
 
 export default function DailyPlannerPAge() {
   const [posts, setPosts] = useState([]);
+  const [status, setstatus] = useState(0);
   return (
     <div className={classes.wrap}>
       <p className="chapter">Chapter 3</p>
@@ -16,8 +17,8 @@ export default function DailyPlannerPAge() {
         <ProgressBar></ProgressBar>
       </FadeIn>
       <div className={classes.planContainer}>
-        <MonthList posts={posts} setPosts={setPosts}></MonthList>
-        <PlanImage posts={posts}></PlanImage>
+        <MonthList posts={posts} setPosts={setPosts} setstatus={setstatus}></MonthList>
+        <PlanImage posts={posts} status={status} setstatus={setstatus}></PlanImage>
       </div>
     </div>
   );

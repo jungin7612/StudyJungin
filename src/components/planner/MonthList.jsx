@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import classes from "./monthList.module.css";
 
-export default function MonthList({ posts, setPosts }) {
+export default function MonthList({ posts, setPosts, setstatus }) {
   useEffect(() => {
     const data = {
       id: "2021-08",
@@ -43,7 +43,10 @@ export default function MonthList({ posts, setPosts }) {
         } else {
           alert("something wrong");
         }
-      });
+      }).then(() => {
+        setstatus(0)
+      })
+
   };
 
 

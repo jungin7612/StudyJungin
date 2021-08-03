@@ -1,31 +1,30 @@
-import { useState } from "react";
 import classes from "./planImage.module.css";
 import Date from "./planImage/Date";
 import TaskList from "./planImage/TaskList";
 
 export default function PlanImage(props: any) {
-  const [status, setstatus] = useState(0);
+ 
   const upHandler = () => {
-    if (status < props.posts.length - 1) {
-      setstatus(status + 1);
+    if (props.status < props.posts.length - 1) {
+      props.setstatus(props.status + 1);
     } else {
      
     }
   };
   const downHandler = () => {
-    if (status > 0) {
-      setstatus(status - 1);
+    if (props.status > 0) {
+      props.setstatus(props.status - 1);
     } else {
      
     }
   };
 
-  const todos = props?.posts[status]?.todos;
+  const todos = props?.posts[props.status]?.todos;
 
-  const date = props?.posts[status]?.date.split("T")[0];
-  const comment = props?.posts[status]?.comment;
-  const itTime = props?.posts[status]?.itTime;
-  const studyTime = props?.posts[status]?.studyTime;
+  const date = props?.posts[props.status]?.date.split("T")[0];
+  const comment = props?.posts[props.status]?.comment;
+  const itTime = props?.posts[props.status]?.itTime;
+  const studyTime = props?.posts[props.status]?.studyTime;
   return (
     <div className={classes.planimgContainer}>
       <svg
