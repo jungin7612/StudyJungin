@@ -8,14 +8,14 @@ export default function PlanImage(props: any) {
     if (props.status < props.posts.length - 1) {
       props.setstatus(props.status + 1);
     } else {
-     
+      props.setstatus(0);
     }
   };
   const downHandler = () => {
     if (props.status > 0) {
       props.setstatus(props.status - 1);
     } else {
-     
+      props.setstatus(props.posts.length-1)
     }
   };
 
