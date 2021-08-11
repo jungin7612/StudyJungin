@@ -13,7 +13,7 @@ export default function WiseSaying() {
   return (
     <div className={classes.wiseSayingWrap}>
       <div className={classes.ddayContainer}>
-        <p>D - {getDiff()}</p>
+        <p>D - {getDiff() + 1}</p>
       </div>
       <div className={classes.wiseSayingContainer}>
         <p>DON'T HAVE TO BE GREAT</p>
