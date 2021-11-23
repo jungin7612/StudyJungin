@@ -4,7 +4,6 @@ export default function WiseSaying() {
   function getDiff() {
     const currDay = new Date();
     const examDay = new Date("November 17, 2022");
-
     const diffDays = Math.floor(
       (examDay.getTime() - currDay.getTime()) / (1000 * 60 * 60 * 24)
     );

@@ -52,11 +52,14 @@ export default function MonthList({ posts, setPosts, setstatus }) {
 
   return (
     <ul className={classes.monthList}>
+      <li onClick={getTodos} id="2021-11">
+        2021 11
+      </li>
       <li onClick={getTodos} id="2021-08">
-        2021 AUG
+        2021 08
       </li>
       <li onClick={getTodos} id="2021-07">
-        2021 JUL
+        2021 07
       </li>
     </ul>
   );
